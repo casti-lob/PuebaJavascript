@@ -59,13 +59,13 @@ function deleteTask(li){
 
 function completeTask(li){
     console.log(li)
-    if(li.id=="done"){
-        li.removeAtribute('class')
-        li.setAttribute('id','')
+    if(li.className=="done"){
+        li.setAttribute('class','')
+       
         
     }else{
         li.setAttribute('class','done')
-        li.setAttribute('id','done')
+        
 
     }
 }
